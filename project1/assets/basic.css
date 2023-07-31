@@ -1,0 +1,16 @@
+.moving_img{
+    margin: 30px;
+}
+.catagory_con {
+    text-align: center;
+}
+
+.price_drop {
+    text-align: center;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+}

@@ -1,0 +1,44 @@
+.button{
+    margin-top:10px;
+    background-color:lightskyblue;
+    padding:5px;
+    padding-left:15px;
+    padding-right:15px;
+    border-radius:15px;
+    border-width:1px;
+    padding-bottom:8px;
+    font-weight: bold;
+}
+.main-bg{
+    background-color:honeydew;
+    height:100vh;
+}
+.sub-bg{
+    text-align:center;
+    background-color:#1f2124;
+    color:white;
+    height:75vh;
+    width:25vw;
+    padding-top:10px;
+    padding-bottom: 40px;
+    margin-top:5%;
+    border-radius:30px;
+}
+.text-box{
+    border-radius: 20px;
+    height: 6vh;
+    width:18vw;
+    padding:17px;
+    border-width:2px;
+}
+.error-msg-bg{
+    height:5vh;
+    background-color:white;
+    text-align:center;
+    color: red;
+    border-radius:20px;
+    margin-bottom:5px;
+    width:19vw;
+    margin-left:11%;
+    margin-top:0px;
+}

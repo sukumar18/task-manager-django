@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'login.css' %}" type="text/css">
+    <title>Login</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">TO-DO-LIST</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{linktorateus}}">Rate us</a>
+                </li>
+                {% if auth.is_authenticated %}
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{linktoregister}}">Register</a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+    <div class="body d-flex flex-row justify-content-center">
+    <div class="main-bg">
+        {% for i in messages %}
+            <div class="error-msg-bg">  
+            {{i}}
+            </div>
+            {% endfor %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div class="d-flex flex-row justify-content-center">
+        <h6>Enter username</h6>
+        </div>
+        <div>
+        <input type="text" placeholder="username" name="username" class="input-box">
+        </div>
+        <div class="pt-3">
+        <div class="d-flex flex-row justify-content-center">
+        <h6>Enter Password</h6>
+        </div>
+        <input type="password" placeholder="password" name="password" class="input-box"></br>
+        </div>
+        <button type="submit" class="button">Login</button>
+    </form>
+    </div>
+    </div>
+</body>
+</html>

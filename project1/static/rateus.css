@@ -1,0 +1,47 @@
+.main-bg{
+    
+}
+.sub-bg{
+    background-color: #1f2124;
+    height:78vh;
+    width:30vw;
+    color:white;
+    padding:3%;
+    margin-top:3%;
+    border-radius:20px;
+}
+.text-box{
+    border-radius: 20px;
+    resize:none;
+    padding:17px;
+    border-width:2px;
+}
+.input-box{
+    border-radius: 20px;
+    height: 6vh;
+    width:7vw;
+    padding:17px;
+    border-width:2px;
+}
+.button{
+    margin-top:15px;
+    background-color:lightskyblue;
+    padding:5px;
+    padding-left:15px;
+    padding-right:15px;
+    border-radius:15px;
+    border-width:1px;
+    padding-bottom:8px;
+    font-weight: bold;
+}
+.error-msg-bg{
+    height:5vh;
+    background-color:white;
+    text-align:center;
+    color:red;
+    border-radius:20px;
+    margin-bottom:5px;
+    width:20vw;
+    margin-left:8%;
+    padding:1px;
+}

@@ -1,0 +1,47 @@
+.button{
+    margin-top:15px;
+    background-color:lightskyblue;
+    padding:5px;
+    padding-left:15px;
+    padding-right:15px;
+    border-radius:15px;
+    font-weight: bold;
+    border-width:1px;
+    padding-bottom:8px;
+    margin-top:1.8%;
+}
+.main-bg{
+}
+.sub-bg{
+    height:20vh;
+    width:90vw;
+    background-color:#1f2124;
+    color:white;
+    padding-left:4%;
+    border-radius:15px;
+    padding-top:1.5%;
+    margin-bottom:2%;
+}
+.info-bg{
+    width:70vw;
+    font-size:smaller;
+    height:15vh;
+}
+.button-bg{
+    height:15vh;
+}
+.headings{
+    font-weight: bold;
+    font-size:large;
+}
+h6{
+    font-style: italic;
+}
+.bgs{
+    margin-left:4%;
+}
+.error-bg{
+    padding-top:10%;
+    width:100vw;
+    color:green;
+}
